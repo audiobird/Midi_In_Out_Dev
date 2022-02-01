@@ -1,0 +1,288 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr User 6363 4000
+encoding utf-8
+Sheet 1 1
+Title "Midi In Out Dev"
+Date "2022-02-01"
+Rev "1.0"
+Comp "Madrone Music"
+Comment1 "3.3 / 5 Volt"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:AudioJack3 J2
+U 1 1 61F95E02
+P 2500 900
+F 0 "J2" V 2436 1088 50  0000 L CNN
+F 1 "Midi_IN" V 2527 1088 50  0000 L CNN
+F 2 "Connector_Audio:Jack_3.5mm_CUI_SJ-3523-SMT_Horizontal" H 2500 900 50  0001 C CNN
+F 3 "~" H 2500 900 50  0001 C CNN
+	1    2500 900 
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:AudioJack3 J1
+U 1 1 61F9645A
+P 700 750
+F 0 "J1" V 636 938 50  0000 L CNN
+F 1 "Midi_OUT" V 727 938 50  0000 L CNN
+F 2 "Connector_Audio:Jack_3.5mm_CUI_SJ-3523-SMT_Horizontal" H 700 750 50  0001 C CNN
+F 3 "~" H 700 750 50  0001 C CNN
+	1    700  750 
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 61F96B02
+P 600 1400
+F 0 "R1" H 659 1446 50  0000 L CNN
+F 1 "10" H 659 1355 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 600 1400 50  0001 C CNN
+F 3 "~" H 600 1400 50  0001 C CNN
+	1    600  1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R2
+U 1 1 61F96FB8
+P 1100 1400
+F 0 "R2" H 1159 1446 50  0000 L CNN
+F 1 "220" H 1159 1355 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 1100 1400 50  0001 C CNN
+F 3 "~" H 1100 1400 50  0001 C CNN
+	1    1100 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 61F976CC
+P 1400 1400
+F 0 "R3" H 1459 1446 50  0000 L CNN
+F 1 "33" H 1459 1355 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 1400 1400 50  0001 C CNN
+F 3 "~" H 1400 1400 50  0001 C CNN
+	1    1400 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R4
+U 1 1 61F97ADD
+P 1900 1400
+F 0 "R4" H 1959 1446 50  0000 L CNN
+F 1 "220" H 1959 1355 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 1900 1400 50  0001 C CNN
+F 3 "~" H 1900 1400 50  0001 C CNN
+	1    1900 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R5
+U 1 1 61F97D19
+P 2750 1500
+F 0 "R5" V 2554 1500 50  0000 C CNN
+F 1 "220" V 2645 1500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 2750 1500 50  0001 C CNN
+F 3 "~" H 2750 1500 50  0001 C CNN
+	1    2750 1500
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small R6
+U 1 1 61F97F95
+P 3850 1300
+F 0 "R6" V 3654 1300 50  0000 C CNN
+F 1 "270" V 3745 1300 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" H 3850 1300 50  0001 C CNN
+F 3 "~" H 3850 1300 50  0001 C CNN
+	1    3850 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L Isolator:H11L1 U1
+U 1 1 61F9866D
+P 3650 1600
+F 0 "U1" H 3994 1646 50  0000 L CNN
+F 1 "H11L1" H 3994 1555 50  0000 L CNN
+F 2 "Package_DIP:DIP-6_W7.62mm" H 3560 1600 50  0001 C CNN
+F 3 "https://www.onsemi.com/pub/Collateral/H11L3M-D.PDF" H 3560 1600 50  0001 C CNN
+	1    3650 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open JP1
+U 1 1 61F99351
+P 850 1800
+F 0 "JP1" H 850 2024 50  0000 C CNN
+F 1 "Sink" H 850 1933 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 850 1800 50  0001 C CNN
+F 3 "~" H 850 1800 50  0001 C CNN
+	1    850  1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper:Jumper_3_Open JP2
+U 1 1 61F9968F
+P 1650 1800
+F 0 "JP2" H 1650 2024 50  0000 C CNN
+F 1 "Source" H 1650 1933 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x02_P2.54mm_Vertical" H 1650 1800 50  0001 C CNN
+F 3 "~" H 1650 1800 50  0001 C CNN
+	1    1650 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	600  1800 600  1500
+Wire Wire Line
+	1100 1800 1100 1500
+Wire Wire Line
+	1400 1800 1400 1500
+Wire Wire Line
+	1900 1800 1900 1500
+$Comp
+L Device:D_Small D1
+U 1 1 61F9FAF8
+P 2950 1600
+F 0 "D1" V 2904 1670 50  0000 L CNN
+F 1 "1n4148" V 2995 1670 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" V 2950 1600 50  0001 C CNN
+F 3 "~" V 2950 1600 50  0001 C CNN
+	1    2950 1600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2950 1700 3350 1700
+Wire Wire Line
+	2950 1500 3350 1500
+$Comp
+L power:+VDC #PWR0101
+U 1 1 61FA11E3
+P 2150 1950
+F 0 "#PWR0101" H 2150 1850 50  0001 C CNN
+F 1 "+VDC" H 2150 2225 50  0000 C CNN
+F 2 "" H 2150 1950 50  0001 C CNN
+F 3 "" H 2150 1950 50  0001 C CNN
+	1    2150 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 61FA157A
+P 3650 1900
+F 0 "#PWR0102" H 3650 1650 50  0001 C CNN
+F 1 "GND" H 3655 1727 50  0000 C CNN
+F 2 "" H 3650 1900 50  0001 C CNN
+F 3 "" H 3650 1900 50  0001 C CNN
+	1    3650 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 1300 3950 1600
+$Comp
+L Connector:Conn_01x04_Female J3
+U 1 1 61FA2154
+P 5050 1600
+F 0 "J3" H 5078 1576 50  0000 L CNN
+F 1 "Conn_01x04_Female" H 5078 1485 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 5050 1600 50  0001 C CNN
+F 3 "~" H 5050 1600 50  0001 C CNN
+	1    5050 1600
+	1    0    0    -1  
+$EndComp
+Connection ~ 3950 1600
+Text Label 4550 1600 2    50   ~ 0
+UART_RX
+Wire Wire Line
+	2850 1500 2950 1500
+Connection ~ 2950 1500
+Wire Wire Line
+	3650 1300 3750 1300
+$Comp
+L power:GND #PWR0103
+U 1 1 61FA561B
+P 800 950
+F 0 "#PWR0103" H 800 700 50  0001 C CNN
+F 1 "GND" H 805 777 50  0000 C CNN
+F 2 "" H 800 950 50  0001 C CNN
+F 3 "" H 800 950 50  0001 C CNN
+	1    800  950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 1100 2500 1500
+Wire Wire Line
+	2950 1700 2400 1700
+Wire Wire Line
+	2400 1700 2400 1100
+Connection ~ 2950 1700
+Wire Wire Line
+	600  1300 1100 1300
+Connection ~ 600  1300
+Wire Wire Line
+	700  1200 1400 1200
+Wire Wire Line
+	1400 1200 1400 1300
+Wire Wire Line
+	1400 1200 1900 1200
+Wire Wire Line
+	1900 1200 1900 1300
+Connection ~ 1400 1200
+Text Label 1400 1950 2    50   ~ 0
+UART_TX
+Wire Wire Line
+	850  1950 1400 1950
+Wire Wire Line
+	4550 1800 4850 1800
+$Comp
+L power:GND #PWR0104
+U 1 1 61FB0252
+P 4550 1800
+F 0 "#PWR0104" H 4550 1550 50  0001 C CNN
+F 1 "GND" H 4555 1627 50  0000 C CNN
+F 2 "" H 4550 1800 50  0001 C CNN
+F 3 "" H 4550 1800 50  0001 C CNN
+	1    4550 1800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3950 1600 4850 1600
+Wire Wire Line
+	4300 1700 4850 1700
+Text Label 4300 1700 0    50   ~ 0
+UART_TX
+$Comp
+L power:+VDC #PWR0105
+U 1 1 61FB4A34
+P 3650 1300
+F 0 "#PWR0105" H 3650 1200 50  0001 C CNN
+F 1 "+VDC" H 3650 1575 50  0000 C CNN
+F 2 "" H 3650 1300 50  0001 C CNN
+F 3 "" H 3650 1300 50  0001 C CNN
+	1    3650 1300
+	1    0    0    -1  
+$EndComp
+Connection ~ 3650 1300
+$Comp
+L power:+VDC #PWR0106
+U 1 1 61FB5213
+P 4850 1500
+F 0 "#PWR0106" H 4850 1400 50  0001 C CNN
+F 1 "+VDC" H 4850 1775 50  0000 C CNN
+F 2 "" H 4850 1500 50  0001 C CNN
+F 3 "" H 4850 1500 50  0001 C CNN
+	1    4850 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 1500 2650 1500
+Wire Wire Line
+	1650 1950 2150 1950
+Wire Wire Line
+	600  950  600  1300
+Wire Wire Line
+	700  950  700  1200
+NoConn ~ 2600 1100
+$EndSCHEMATC
